@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b121m4gt0d8uw" path="res://middleground1.png" id="4_8c340"]
 [ext_resource type="Script" uid="uid://dxolwug1p72xq" path="res://jogador.gd" id="6_45nkh"]
 [ext_resource type="Texture2D" uid="uid://dn7q3l8pipleg" path="res://player.png" id="7_ysdx3"]
+[ext_resource type="Script" uid="uid://c5sps53i78bd" path="res://gerador_obstaculos.gd" id="8_ysdx3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_45nkh"]
 size = Vector2(2227.5, 56)
@@ -130,5 +131,8 @@ scale = Vector2(4.3125, 4.5833335)
 sprite_frames = SubResource("SpriteFrames_msvki")
 
 [node name="Corpo" type="CollisionShape2D" parent="Jogador" unique_id=1195310692]
-position = Vector2(85, 562)
+position = Vector2(86, 543)
 shape = SubResource("CircleShape2D_45nkh")
+
+[node name="GeradorObstaculos" type="Node2D" parent="." unique_id=1290266869]
+script = ExtResource("8_ysdx3")

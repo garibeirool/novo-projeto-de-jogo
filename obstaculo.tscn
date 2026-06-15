@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://crmhwskxdv87t"]
+
+[ext_resource type="Script" uid="uid://bq4k6p4bvbjln" path="res://obstaculo.gd" id="1_phkyr"]
+[ext_resource type="Texture2D" uid="uid://dwjssfycxai3e" path="res://thorn.png" id="2_61ayu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_phkyr"]
+radius = 50.566788
+
+[node name="obstaculo" type="Area2D" unique_id=1029694720]
+script = ExtResource("1_phkyr")
+
+[node name="ImagemObstaculo" type="Sprite2D" parent="." unique_id=693527421]
+position = Vector2(-44, -103)
+scale = Vector2(6.3749986, 7.6875005)
+texture = ExtResource("2_61ayu")
+centered = false
+
+[node name="CorpoObstaculo" type="CollisionShape2D" parent="." unique_id=210610199]
+position = Vector2(5, -20)
+shape = SubResource("CircleShape2D_phkyr")

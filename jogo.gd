@@ -21,15 +21,15 @@ func _process(delta: float) -> void:
 	if $Chao2.position.x < -1152:
 		$Chao2.position.x = 1152
 		
-	$MeioAzul.position.x -= velocidade*delta*1.5
-	$MeioAzul2.position.x -= velocidade*delta*1.5
+	$MeioAzul.position.x -= velocidade*delta*1
+	$MeioAzul2.position.x -= velocidade*delta*1
 	if $MeioAzul.position.x < -1152:
 		$MeioAzul.position.x = 1152
 	if $MeioAzul2.position.x < -1152:
 		$MeioAzul2.position.x = 1152
 		
-		$MeioPreto.position.x -= velocidade*delta*0.05
-	$MeioPreto2.position.x -= velocidade*delta*0.05
+	$MeioPreto.position.x -= velocidade*delta*1.5
+	$MeioPreto2.position.x -= velocidade*delta*1.5
 	if $MeioPreto.position.x < -1152:
 		$MeioPreto.position.x = 1152
 	if $MeioPreto2.position.x < -1152:
