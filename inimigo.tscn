@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dhc53kgwya7qn"]
+
+[node name="Inimigo" type="Area2D" unique_id=2071498383]
+
+[node name="ImagemInimigo" type="AnimatedSprite2D" parent="." unique_id=1189001807]
+
+[node name="CorpoInimigo" type="CollisionShape2D" parent="." unique_id=2116996843]

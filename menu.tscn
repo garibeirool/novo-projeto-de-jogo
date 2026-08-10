@@ -1,97 +1,104 @@
 [gd_scene format=3 uid="uid://cd3c4sr8qfy57"]
 
-[ext_resource type="Script" uid="uid://dpa6l1sbdq4tr" path="res://menu.gd" id="1_mae5d"]
-[ext_resource type="Texture2D" uid="uid://drtix87fsxx8y" path="res://background.png" id="2_4hy44"]
-[ext_resource type="FontFile" uid="uid://kdx854aa8y6a" path="res://PressStart2P-Regular.ttf" id="3_ytr4m"]
+[ext_resource type="Script" uid="uid://dpa6l1sbdq4tr" path="res://menu.gd" id="1_4hy44"]
+[ext_resource type="Texture2D" uid="uid://bbuwxqg6tgpvu" path="res://parallax/skies/Sky_sky.png" id="1_mae5d"]
+[ext_resource type="FontFile" uid="uid://di70020qi6co2" path="res://assetpack/Diary Story.otf" id="2_4hy44"]
+[ext_resource type="FontFile" uid="uid://70sw0lveyb1e" path="res://parallax/Diary Story.otf" id="3_ytr4m"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l48gv"]
-texture = ExtResource("2_4hy44")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nrnd0"]
+texture = ExtResource("1_mae5d")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ecwwl"]
-bg_color = Color(0.08522151, 0.17409232, 0.43724477, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8onwa"]
+bg_color = Color(1, 1, 1, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kk3ma"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xtdd5"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nrnbx"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_228xq"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iqepy"]
-bg_color = Color(0.1525811, 0.20935804, 0.5498525, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jav3a"]
+bg_color = Color(1, 1, 1, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1wq0"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_whi06"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dwrpx"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i1qhb"]
 
-[node name="Menu" type="Control" unique_id=687439555]
+[node name="Menu" type="Control" unique_id=1155292488]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -129.0
+offset_top = -1.0
+offset_right = -129.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_mae5d")
+script = ExtResource("1_4hy44")
 
-[node name="Fundo" type="Panel" parent="." unique_id=2140240665]
+[node name="Fundo" type="Panel" parent="." unique_id=1570273043]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 134.0
+offset_top = 4.0
+offset_right = 132.0
+offset_bottom = 349.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_l48gv")
+theme_override_styles/panel = SubResource("StyleBoxTexture_nrnd0")
 
-[node name="Titulo" type="Label" parent="." unique_id=1455532097]
+[node name="Titulo" type="Label" parent="." unique_id=285475578]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -493.0
-offset_top = -278.0
-offset_right = 547.0
-offset_bottom = -178.0
+anchors_preset = -1
+anchor_left = 0.62600005
+anchor_top = 0.143
+anchor_right = 0.62600005
+anchor_bottom = 0.143
+offset_left = -288.15204
+offset_top = -75.664
+offset_right = 287.84796
+offset_bottom = 75.336
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.89057714, 0.12571871, 0.31594047, 1)
-theme_override_colors/font_outline_color = Color(0.8981458, 0.5108537, 0.6534584, 1)
-theme_override_fonts/font = ExtResource("3_ytr4m")
-theme_override_font_sizes/font_size = 65
-text = "SEBO NAS CANELAS"
+theme_override_fonts/font = ExtResource("2_4hy44")
+theme_override_font_sizes/font_size = 136
+text = "PARALLAX"
 
-[node name="Botões" type="VBoxContainer" parent="." unique_id=1949626568]
+[node name="Botoes" type="VBoxContainer" parent="." unique_id=829285468]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -100.0
-offset_top = -20.0
-offset_right = 100.0
-offset_bottom = 163.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = -1
+anchor_left = 0.61
+anchor_top = 0.574
+anchor_right = 0.61
+anchor_bottom = 0.574
+offset_left = -171.72003
+offset_top = -86.951996
+offset_right = 172.27997
+offset_bottom = 87.048004
 theme_override_constants/separation = 54
 
-[node name="Jogar" type="Button" parent="Botões" unique_id=287662244]
+[node name="Jogar" type="Button" parent="Botoes" unique_id=971905248]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.82938665, 0.24112114, 0.6448891, 1)
+theme_override_colors/font_color = Color(0.90698963, 0.32338208, 0.48196244, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_ytr4m")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_ecwwl")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_kk3ma")
-theme_override_styles/hover = SubResource("StyleBoxFlat_nrnbx")
+theme_override_font_sizes/font_size = 54
+theme_override_styles/normal = SubResource("StyleBoxFlat_8onwa")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xtdd5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_228xq")
 text = "JOGAR"
 
-[node name="Sair" type="Button" parent="Botões" unique_id=705689461]
+[node name="Sair" type="Button" parent="Botoes" unique_id=1362899782]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.79621077, 0.23193571, 0.4921292, 1)
+theme_override_colors/font_color = Color(0.90588236, 0.32156864, 0.48235294, 1)
 theme_override_fonts/font = ExtResource("3_ytr4m")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_iqepy")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_h1wq0")
-theme_override_styles/hover = SubResource("StyleBoxFlat_dwrpx")
+theme_override_font_sizes/font_size = 54
+theme_override_styles/normal = SubResource("StyleBoxFlat_jav3a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_whi06")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i1qhb")
 text = "SAIR"
 
-[connection signal="pressed" from="Botões/Jogar" to="." method="_on_jogar_pressed"]
-[connection signal="pressed" from="Botões/Sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="Botoes/Jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="Botoes/Sair" to="." method="_on_sair_pressed"]
