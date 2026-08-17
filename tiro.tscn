@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bgamo4rl87d6f"]
+
+[ext_resource type="Texture2D" uid="uid://fsvmjdg8wqma" path="res://assetpack/Bonus (player ship)/shooting laser-sheet.png" id="1_rivwi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gp2hl"]
+atlas = ExtResource("1_rivwi")
+region = Rect2(0, 0, 211, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wib4g"]
+atlas = ExtResource("1_rivwi")
+region = Rect2(211, 0, 211, 92)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qitiy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gp2hl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wib4g")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cte7t"]
+size = Vector2(307, 66)
+
+[node name="Tiro" type="Area2D" unique_id=682587986]
+
+[node name="ImagemTiro" type="AnimatedSprite2D" parent="." unique_id=1398954738]
+position = Vector2(4, -1)
+scale = Vector2(1.7796209, 1.6304348)
+sprite_frames = SubResource("SpriteFrames_qitiy")
+
+[node name="CorpoTiro" type="CollisionShape2D" parent="." unique_id=2065923993]
+position = Vector2(-0.5, -8)
+shape = SubResource("RectangleShape2D_cte7t")

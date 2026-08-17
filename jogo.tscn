@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://drlsbipijyd17" path="res://parallax/skies/Sky_back_mountain.png" id="5_orj5g"]
 [ext_resource type="Texture2D" uid="uid://dhdalf4a2med" path="res://parallax/skies/sky_front_mountain.png" id="6_01kpq"]
 [ext_resource type="Texture2D" uid="uid://b6ngxycqnyk6s" path="res://parallax/skies/sky_cloud_floor_2.png" id="7_2ka1p"]
+[ext_resource type="Script" uid="uid://dg2q81f0bx74k" path="res://gerador_inimigos.gd" id="8_ysdx3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7rhuj"]
 atlas = ExtResource("2_ysdx3")
@@ -126,3 +127,12 @@ motion_mirroring = Vector2(1152, 0)
 position = Vector2(582.49994, 290)
 scale = Vector2(0.61105263, 0.723)
 texture = ExtResource("7_2ka1p")
+
+[node name="GeradorInimigos" type="Node2D" parent="." unique_id=32007549]
+script = ExtResource("8_ysdx3")
+
+[node name="Timer" type="Timer" parent="GeradorInimigos" unique_id=2134869113]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="GeradorInimigos/Timer" to="GeradorInimigos" method="_on_timer_timeout"]

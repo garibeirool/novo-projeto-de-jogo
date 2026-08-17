@@ -1,18 +1,19 @@
 extends CharacterBody2D
 
 
+var vidas = 5
 const SPEED = 300.0
 func _physics_process(delta: float) -> void:
 	velocity.x = 0
 	velocity.y = 0
 	
-	if Input.is_action_just_pressed("ui_left"):
+	if Input.is_action_pressed("ui_left"):
 		velocity.x = -1*SPEED
-	if Input.is_action_just_pressed("ui_right"):
+	if Input.is_action_pressed("ui_right"):
 		velocity.y = 1*SPEED
-	if Input.is_action_just_pressed("ui_up"):
+	if Input.is_action_pressed("ui_up"):
 		velocity.y = -1*SPEED
-	if Input.is_action_just_pressed("ui_down"):
+	if Input.is_action_pressed("ui_down"):
 		velocity.x = 1*SPEED
 	
 	move_and_slide()
